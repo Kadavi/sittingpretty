@@ -38,7 +38,9 @@ public class Main extends Application {
     static User32 user32 = User32.INSTANCE;
 
     static {
+
         System.load(System.getProperty("user.dir") + "/src/app/opencv_java246.dll");
+
     }
 
     @Override
@@ -86,15 +88,16 @@ public class Main extends Application {
 
             public void run() {
 
+                String result = null;
+
                 WinDef.HWND currentFocusedHwnd = user32.GetForegroundWindow();
 
+                WinDef.RECT cRect = new WinDef.RECT();
+                WinDef.RECT fRect = new WinDef.RECT();
                 WinDef.HWND cHwnd = user32.FindWindow
                         (null, "Netflix - Google Chrome");
-                WinDef.RECT cRect = new WinDef.RECT();
-
                 WinDef.HWND fHwnd = user32.FindWindow
                         (null, "Netflix - Mozilla Firefox");
-                WinDef.RECT fRect = new WinDef.RECT();
 
                 List<WinDef.RECT> rois = new ArrayList<WinDef.RECT>();
 
@@ -115,8 +118,6 @@ public class Main extends Application {
                     rois.add(fRect);
 
                 }
-
-                String result = null;
 
                 File file = new File("C:/Users/Grant Dawson/IdeaProjects/sittingpretty/src/app/sight.jpg");
 
@@ -152,16 +153,9 @@ public class Main extends Application {
 
                         result = builder.execute().get().getResponseBody();
 
-                        if (!result.isEmpty()) {
+                        if (!result.isEmpty() && result.contains(",")) {
 
-                            System.out.println(result);
-
-                            if (result.contains(","))
-                                mouseClick(result.split(","), rect, currentFocusedHwnd);
-
-                        } else {
-
-                            System.out.println("\nwiff");
+                            mouseClick(result.split(","), rect, currentFocusedHwnd);
 
                         }
 
