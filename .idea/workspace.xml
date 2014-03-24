@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\car.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\.idea\libraries\jna_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\jna-4.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\jna-platform-4.1.0.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/sight.jpg" afterPath="$PROJECT_DIR$/src/app/sight.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sittingpretty.iml" afterPath="$PROJECT_DIR$/sittingpretty.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -71,14 +74,8 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.57410884" vertical-offset="0" max-vertical-offset="3230">
-              <folding>
-                <element signature="e#1847#2175#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2523#5676#0" expanded="true" />
-                <element signature="e#3086#3099#0" expanded="true" />
-                <element signature="e#5665#5666#0" expanded="true" />
-              </folding>
+            <state line="42" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="-0.7134588" vertical-offset="714" max-vertical-offset="3145">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,6 +136,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,7 +175,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -192,7 +189,7 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/app/jna-platform-4.1.0.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jna-4.1.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -208,6 +205,7 @@
       <recent name="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\lib" />
       <recent name="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app" />
     </key>
   </component>
@@ -528,7 +526,8 @@
       <workItem from="1394777702748" duration="2824000" />
       <workItem from="1394940462261" duration="59000" />
       <workItem from="1395029905689" duration="4502000" />
-      <workItem from="1395605233942" duration="31136000" />
+      <workItem from="1395605233942" duration="31285000" />
+      <workItem from="1395684959976" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1394695917135</created>
@@ -558,11 +557,15 @@
       <created>1395684738964</created>
       <updated>1395684738964</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Delete images.">
+      <created>1395684773266</created>
+      <updated>1395684773266</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88806000" />
+    <option name="totallyTimeSpent" value="88988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="947" height="860" extended-state="0" />
@@ -573,7 +576,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26438355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -582,19 +584,20 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27671233" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24971879" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24971879" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27671233" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -617,7 +620,8 @@
     <MESSAGE value="Relative dll path." />
     <MESSAGE value="Removed JNA sandbox." />
     <MESSAGE value="Reformat." />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat." />
+    <MESSAGE value="Delete images." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete images." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -629,79 +633,50 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="3230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="155" column="0" selection-start="4818" selection-end="4818" vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="4131">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="71" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.0" vertical-offset="2467" max-vertical-offset="4709">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="71" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.0" vertical-offset="2467" max-vertical-offset="4709">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="140" column="70" selection-start="4612" selection-end="4612" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="2618">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="25" selection-start="4403" selection-end="4403" vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="2618">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="28" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1054">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,13 +697,7 @@
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="493">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -813,16 +782,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../greatbench/lib/opencv-246.jar!/org/opencv/core/Rect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="11" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.33268103" vertical-offset="1037" max-vertical-offset="2890">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/app/jna-platform-4.1.0.jar!/com/sun/jna/platform/win32/User32.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="2839">
-          <folding />
-        </state>
+        <state line="71" column="11" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.33268103" vertical-offset="1037" max-vertical-offset="2890" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/Rectangle.java">
@@ -834,32 +794,22 @@
     </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/jna-platform-4.1.0-sources.jar!/com/sun/jna/platform/win32/User32.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="17" selection-start="1293" selection-end="1358" vertical-scroll-proportion="0.33214286" vertical-offset="52" max-vertical-offset="28747">
-          <folding />
-        </state>
+        <state line="34" column="17" selection-start="1293" selection-end="1358" vertical-scroll-proportion="0.33214286" vertical-offset="52" max-vertical-offset="28747" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="491" column="0" selection-start="17855" selection-end="17855" vertical-scroll-proportion="0.33208254" vertical-offset="7779" max-vertical-offset="20859">
-          <folding />
-        </state>
+        <state line="491" column="0" selection-start="17855" selection-end="17855" vertical-scroll-proportion="0.33208254" vertical-offset="7779" max-vertical-offset="20859" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/NumberFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="850">
-          <folding>
-            <element signature="e#0#1368#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="64" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="850" />
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/jna-platform-4.1.0-sources.jar!/com/sun/jna/platform/win32/WinDef.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="726" column="17" selection-start="14520" selection-end="14520" vertical-scroll-proportion="-1.3442982" vertical-offset="12547" max-vertical-offset="26248">
-          <folding />
-        </state>
+        <state line="726" column="17" selection-start="14520" selection-end="14520" vertical-scroll-proportion="-1.3442982" vertical-offset="12547" max-vertical-offset="26248" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/Double.java">
@@ -878,9 +828,7 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/jfxrt.jar!/javafx/scene/image/Image.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="738" column="0" selection-start="21664" selection-end="21664" vertical-scroll-proportion="0.0" vertical-offset="12115" max-vertical-offset="12648">
-          <folding />
-        </state>
+        <state line="738" column="0" selection-start="21664" selection-end="21664" vertical-scroll-proportion="0.0" vertical-offset="12115" max-vertical-offset="12648" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/sight.jpg">
@@ -890,14 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.57410884" vertical-offset="0" max-vertical-offset="3230">
-          <folding>
-            <element signature="e#1847#2175#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2523#5676#0" expanded="true" />
-            <element signature="e#3086#3099#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-          </folding>
+        <state line="42" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="-0.7134588" vertical-offset="714" max-vertical-offset="3145">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +912,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jna-4.1.0</last-edited>
+          <last-edited>jna-platform-4.1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
