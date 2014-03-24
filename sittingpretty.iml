@@ -10,6 +10,7 @@
     <orderEntry type="library" name="async-http-client-1.8.3" level="project" />
     <orderEntry type="library" name="slf4j-api-1.7.6" level="project" />
     <orderEntry type="library" name="opencv-246" level="project" />
+    <orderEntry type="library" name="jna-4.1.0" level="project" />
   </component>
 </module>
 
