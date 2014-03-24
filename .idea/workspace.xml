@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jna_platform_4_1_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Main.java" afterPath="$PROJECT_DIR$/src/app/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -70,8 +70,10 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="-0.7134588" vertical-offset="714" max-vertical-offset="3145">
-              <folding />
+            <state line="41" column="58" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.38273922" vertical-offset="0" max-vertical-offset="3145">
+              <folding>
+                <element signature="e#3082#3095#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -523,7 +525,7 @@
       <workItem from="1394940462261" duration="59000" />
       <workItem from="1395029905689" duration="4502000" />
       <workItem from="1395605233942" duration="31285000" />
-      <workItem from="1395684959976" duration="50000" />
+      <workItem from="1395684959976" duration="103000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1394695917135</created>
@@ -561,11 +563,15 @@
       <created>1395685004552</created>
       <updated>1395685004552</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Moved jna jars to lib.&#10;">
+      <created>1395685012878</created>
+      <updated>1395685012878</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89005000" />
+    <option name="totallyTimeSpent" value="89058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="947" height="860" extended-state="0" />
@@ -591,7 +597,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24971879" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -622,7 +628,8 @@
     <MESSAGE value="Reformat." />
     <MESSAGE value="Delete images." />
     <MESSAGE value="Moved jna jars to lib." />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved jna jars to lib." />
+    <MESSAGE value="Moved jna jars to lib.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved jna jars to lib.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -635,49 +642,63 @@
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="3230">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="155" column="0" selection-start="4818" selection-end="4818" vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="4131">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="71" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.0" vertical-offset="2467" max-vertical-offset="4709">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="71" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.0" vertical-offset="2467" max-vertical-offset="4709">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="140" column="70" selection-start="4612" selection-end="4612" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="2618">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="25" selection-start="4403" selection-end="4403" vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="2618">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="28" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1054">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -698,7 +719,9 @@
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="493">
-          <folding />
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -839,8 +862,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1292" selection-end="1292" vertical-scroll-proportion="-0.7134588" vertical-offset="714" max-vertical-offset="3145">
-          <folding />
+        <state line="41" column="58" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.38273922" vertical-offset="0" max-vertical-offset="3145">
+          <folding>
+            <element signature="e#3082#3095#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -39,7 +39,7 @@ public class Main extends Application {
 
     static {
 
-        System.load(System.getProperty("user.dir") + "/src/app/opencv_java246.dll");
+        System.load(System.getProperty("user.dir") + "/lib/opencv_java246.dll");
 
     }
 
