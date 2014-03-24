@@ -45,6 +45,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         Parent root = FXMLLoader.load(getClass().getResource("app.fxml"));
         primaryStage.setTitle("Polite Stare");
         primaryStage.setWidth(250);
@@ -78,6 +79,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
 
         primaryStage.show();
+
     }
 
     public static void runLoop() {
