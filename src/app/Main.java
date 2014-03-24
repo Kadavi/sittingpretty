@@ -37,12 +37,6 @@ public class Main extends Application {
     
     static User32 user32 = User32.INSTANCE;
 
-    static {
-
-        System.load(System.getProperty("user.dir") + "/lib/opencv_java246.dll");
-
-    }
-
     @Override
     public void start(Stage primaryStage) throws Exception {
 
