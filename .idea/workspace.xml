@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\JNASandbox.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/sight.jpg" afterPath="$PROJECT_DIR$/src/app/sight.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Main.java" afterPath="$PROJECT_DIR$/src/app/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -68,17 +68,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JNASandbox.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/JNASandbox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="969">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -90,22 +79,6 @@
                 <element signature="e#3084#3097#0" expanded="true" />
                 <element signature="e#5663#5664#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sight.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/sight.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Image.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/jfxrt.jar!/javafx/scene/image/Image.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="738" column="0" selection-start="21664" selection-end="21664" vertical-scroll-proportion="0.0" vertical-offset="12115" max-vertical-offset="12648">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -555,7 +528,7 @@
       <workItem from="1394777702748" duration="2824000" />
       <workItem from="1394940462261" duration="59000" />
       <workItem from="1395029905689" duration="4502000" />
-      <workItem from="1395605233942" duration="30996000" />
+      <workItem from="1395605233942" duration="31040000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1394695917135</created>
@@ -573,11 +546,15 @@
       <created>1395684323287</created>
       <updated>1395684323287</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reformat.">
+      <created>1395684636809</created>
+      <updated>1395684636809</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88666000" />
+    <option name="totallyTimeSpent" value="88710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="947" height="860" extended-state="0" />
@@ -603,7 +580,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24971879" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24971879" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -630,7 +607,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="init&#10;" />
     <MESSAGE value="Relative dll path." />
-    <option name="LAST_COMMIT_MESSAGE" value="Relative dll path." />
+    <MESSAGE value="Reformat." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformat." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -864,15 +842,6 @@
         <state line="64" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="850">
           <folding>
             <element signature="e#0#1368#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/JNASandbox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="969">
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
