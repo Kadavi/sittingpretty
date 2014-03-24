@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/jna-4.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/jna-platform-4.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/JNASandbox.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jna_4_1_0.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/sight.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\YOW.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\psyduck.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\screenshot.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\screeny.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/sight.jpg" afterPath="$PROJECT_DIR$/src/app/sight.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/Main.java" afterPath="$PROJECT_DIR$/src/app/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sittingpretty.iml" afterPath="$PROJECT_DIR$/sittingpretty.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -91,18 +82,23 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="21" selection-start="6981" selection-end="6981" vertical-scroll-proportion="0.3936324" vertical-offset="2006" max-vertical-offset="2737">
+            <state line="39" column="12" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.31894934" vertical-offset="0" max-vertical-offset="3298">
               <folding>
-                <element signature="method#start#0;class#Main#0" expanded="false" />
-                <element signature="e#2046#2374#0" expanded="true" />
-                <element signature="e#2363#2364#0" expanded="true" />
-                <element signature="e#2760#6304#0" expanded="true" />
-                <element signature="e#3452#3465#0" expanded="true" />
-                <element signature="e#6293#6294#0" expanded="true" />
-                <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-                <element signature="e#10147#10159#0" expanded="true" />
-                <element signature="method#main#0;class#Main#0" expanded="false" />
+                <element signature="e#1844#2172#0" expanded="true" />
+                <element signature="e#2161#2162#0" expanded="true" />
+                <element signature="e#2519#5857#0" expanded="true" />
+                <element signature="e#3044#3057#0" expanded="true" />
+                <element signature="e#5846#5847#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/jfxrt.jar!/javafx/scene/image/Image.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="738" column="0" selection-start="21664" selection-end="21664" vertical-scroll-proportion="0.0" vertical-offset="12115" max-vertical-offset="12648">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,7 +128,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="720" />
+    <option name="width" value="947" />
     <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -225,6 +221,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -551,7 +548,7 @@
       <workItem from="1394777702748" duration="2824000" />
       <workItem from="1394940462261" duration="59000" />
       <workItem from="1395029905689" duration="4502000" />
-      <workItem from="1395605233942" duration="27620000" />
+      <workItem from="1395605233942" duration="30673000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1394695917135</created>
@@ -561,14 +558,18 @@
       <created>1394697270499</created>
       <updated>1394697270499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init&#10;">
+      <created>1395679130234</created>
+      <updated>1395679130234</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85290000" />
+    <option name="totallyTimeSpent" value="88343000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="720" height="860" extended-state="0" />
+    <frame x="0" y="0" width="947" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -579,7 +580,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26541555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26438355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739726" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -591,8 +592,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24018127" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24971879" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21643835" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -616,7 +617,8 @@
     </option>
     <MESSAGE value="Got opencv and async client to work." />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="init&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="init&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -630,15 +632,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="155" column="0" selection-start="4818" selection-end="4818" vertical-scroll-proportion="0.0" vertical-offset="2635" max-vertical-offset="4131">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -647,15 +645,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="71" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.0" vertical-offset="2467" max-vertical-offset="4709">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -664,15 +658,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="71" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.0" vertical-offset="2467" max-vertical-offset="4709">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -681,15 +671,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="140" column="70" selection-start="4612" selection-end="4612" vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="2618">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,15 +684,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="25" selection-start="4403" selection-end="4403" vertical-scroll-proportion="0.0" vertical-offset="2261" max-vertical-offset="2618">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,15 +697,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="28" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1054">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -746,15 +724,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="493">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -912,19 +886,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/jfxrt.jar!/javafx/scene/image/Image.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="738" column="0" selection-start="21664" selection-end="21664" vertical-scroll-proportion="0.0" vertical-offset="12115" max-vertical-offset="12648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="21" selection-start="6981" selection-end="6981" vertical-scroll-proportion="0.3936324" vertical-offset="2006" max-vertical-offset="2737">
+        <state line="39" column="12" selection-start="1205" selection-end="1205" vertical-scroll-proportion="0.31894934" vertical-offset="0" max-vertical-offset="3298">
           <folding>
-            <element signature="method#start#0;class#Main#0" expanded="false" />
-            <element signature="e#2046#2374#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2760#6304#0" expanded="true" />
-            <element signature="e#3452#3465#0" expanded="true" />
-            <element signature="e#6293#6294#0" expanded="true" />
-            <element signature="method#DetectCircle#0;class#Main#0" expanded="false" />
-            <element signature="e#10147#10159#0" expanded="true" />
-            <element signature="method#main#0;class#Main#0" expanded="false" />
+            <element signature="e#1844#2172#0" expanded="true" />
+            <element signature="e#2161#2162#0" expanded="true" />
+            <element signature="e#2519#5857#0" expanded="true" />
+            <element signature="e#3044#3057#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
           </folding>
         </state>
       </provider>
