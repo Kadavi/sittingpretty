@@ -145,12 +145,15 @@ public class Main extends Application {
                     //builder.addParameter("key", "#$@#$");
                     builder.addBodyPart(new FilePart("fileupload", file, fileTypeMap.getContentType(file), "UTF-8"));
 
+                    System.out.println("Sending");
+
                     try {
 
                         result = builder.execute().get().getResponseBody();
 
                         if (!result.isEmpty() && result.contains(",")) {
 
+                            System.out.println("Clicking");
                             mouseClick(result.split(","), rect, currentFocusedHwnd);
 
                         }
