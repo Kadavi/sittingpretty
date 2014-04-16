@@ -66,14 +66,14 @@ public class LoginController extends AnchorPane implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         errorMessage.setText("");
-        userId.setPromptText("demo");
-        password.setPromptText("demo");
+        userId.setPromptText("test@email.com");
+        password.setPromptText("secrets");
         
     }
     
     public void processLogin(ActionEvent event) {
 
-        if (!application.userLogging(userId.getText(), password.getText())){
+        if (!application.userLogin(userId.getText(), password.getText())){
             errorMessage.setText("Username/Password is incorrect.");
         }
 

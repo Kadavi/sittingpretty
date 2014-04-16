@@ -84,14 +84,14 @@ public class ProfileController extends AnchorPane implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
     }
-    
+
     public void processLogout(ActionEvent event) {
         if (application == null){
             // We are running in isolated FXML, possibly in Scene Builder.
             // NO-OP.
             return;
         }
-        
+
         application.userLogout();
     }
     
@@ -102,24 +102,28 @@ public class ProfileController extends AnchorPane implements Initializable {
             animateMessage();
             return;
         }
+        /*
         User loggedUser = application.getLoggedUser();
         loggedUser.setEmail(email.getText());
         loggedUser.setPhone(phone.getText());
         loggedUser.setSubscribed(subscribed.isSelected());
         loggedUser.setAddress(address.getText());
-        animateMessage();
+        animateMessage();*/
+
+        application.stopLoop();
     }
     
     public void resetProfile(ActionEvent event){
         if (application == null){
             return;
         }
-        email.setText("");
+        /*email.setText("");
         phone.setText("");
         subscribed.setSelected(false);
         address.setText("");
         success.setOpacity(0.0);
-        
+        */
+        application.runLoop();
     }
 
     private void animateMessage() {

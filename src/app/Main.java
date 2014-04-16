@@ -142,7 +142,7 @@ public class Main extends Application {
 
                     builder.setHeader("Content-Type", "multipart/form-data");
                     builder.addParameter("email", "coedry@gmail.com");
-                    //builder.addParameter("key", "#$@#$");
+                    builder.addParameter("key", "#$@#$");
                     builder.addBodyPart(new FilePart("fileupload", file, fileTypeMap.getContentType(file), "UTF-8"));
 
                     System.out.println("Sending");
