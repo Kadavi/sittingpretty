@@ -1,6 +1,6 @@
 
 .background {
-    -fx-background-image: url("login.jpg");
+    -fx-background-image: url("switch.jpg");
     -fx-background-repeat: stretch;
     -fx-background-size: stretch;
     -fx-background-position: center center;
@@ -8,16 +8,16 @@
 }
 
 .top-segment {
-	-fx-background-color: rgba(255, 255, 255, 0.05);
-	-fx-border-color: 
-		transparent transparent rgb(255, 255, 255, 0.08) transparent,
-		transparent transparent rgb(0, 0, 0, 0.5) transparent;
-	-fx-border-width: 1, 1.5;
-	-fx-border-insets: -1, 0; 
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color:
+        transparent transparent rgb(255, 255, 255, 0.08) transparent,
+        transparent transparent rgb(0, 0, 0, 0.5) transparent;
+    -fx-border-width: 1, 1.5;
+    -fx-border-insets: -1, 0;
 }
 
 .label {
-	-fx-font-family: "Arial";
+    -fx-font-family: "Arial";
     -fx-font-size: 14;
     -fx-text-fill: rgb(255, 250, 255, 0.5);
     -fx-effect: dropshadow( one-pass-box , rgb(0, 20, 0, 0.9), 0, 0.0 , 0 , 2 );
@@ -30,18 +30,18 @@
 .hyperlink {
     -fx-font-family: "Arial";
     -fx-font-size: 18;
-    -fx-text-fill: rgb(255, 255, 255, 0.4);
+    -fx-text-fill: rgb(255, 255, 255, 0.7);
     -fx-effect: dropshadow( one-pass-box , rgb(0, 0, 0, 0.6), 0, 0.0 , 0 , 1 );
     -fx-border-width: 0;
 }
 
 .hyperlink:focused {
-	-fx-text-fill: rgb(255, 255, 255, 0.6);
+    -fx-text-fill: rgb(255, 255, 255, 0.6);
 }
 
 .check-box .box {
-	-fx-background-color:
-		rgb(255, 255, 255, 0.1),
+    -fx-background-color:
+        rgb(255, 255, 255, 0.1),
         rgb(0, 0, 0, 1),
         -fx-outer-border,
         -fx-inner-border,
@@ -50,8 +50,8 @@
 }
 
 .check-box:focused .box {
-	-fx-background-color:
-		rgb(255, 255, 255, 0.15),
+    -fx-background-color:
+        rgb(255, 255, 255, 0.15),
         rgb(0, 0, 0, 0.8),
         -fx-outer-border,
         -fx-inner-border,
@@ -64,8 +64,8 @@
 
 .button {
     -fx-background-color:
-    	rgb(255, 255, 255, 0.08),
-    	rgb(0, 0, 0, 0.8),
+        rgb(255, 255, 255, 0.08),
+        rgb(0, 0, 0, 0.8),
         #090a0c,
         linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
         linear-gradient(#242a2e, #23282e),
@@ -73,7 +73,7 @@
         rgba(255,255,255,0));
     -fx-background-radius: 7, 6, 5, 4, 3, 5;
     -fx-background-insets: -3 -3 -4 -3, -3, 0, 1, 2, 0;
-	-fx-font-family: "Arial";
+    -fx-font-family: "Arial";
     -fx-text-fill: white;
     -fx-font-size: 14;
     -fx-text-fill: linear-gradient(white, #d0d0d0);
@@ -82,8 +82,8 @@
 
 .button:focused, .button:hover {
     -fx-background-color:
-    	rgb(255, 255, 255, 0.08),
-    	rgb(0, 0, 0, 0.8),
+        rgb(255, 255, 255, 0.08),
+        rgb(0, 0, 0, 0.8),
         #090a0c,
         linear-gradient(#4a5661 0%, #1f2429 20%, #1f242a 100%),
         linear-gradient(#3f4950, #23282e),
@@ -92,10 +92,10 @@
 }
 
 .text-field, .text-area {
-	-fx-font-size: 18;
+    -fx-font-size: 18;
     -fx-background-color:
-    	rgb(255, 255, 255, 0.3),
-    	linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
+        rgb(255, 255, 255, 0.3),
+        linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.8) 50%),
         rgb(218, 226, 224);
     -fx-background-insets: 0 0 -1 0, 0, 1.5;
     -fx-background-radius: 6, 5, 4;
@@ -105,14 +105,14 @@
 }
 
 .text-area {
-	-fx-padding: 6 5 6 5;
+    -fx-padding: 6 5 6 5;
 }
 
 .text-field:focused, .text-area:focused {
     -fx-prompt-text-fill:
         rgb(128,128,128);
     -fx-background-color:
-    	rgb(235, 235, 235, 0.5),
+        rgb(235, 235, 235, 0.5),
         rgb(0, 0, 0, 0.4),
         rgb(255, 255, 255);
 }

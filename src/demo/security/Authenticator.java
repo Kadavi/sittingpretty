@@ -50,7 +50,7 @@ public class Authenticator {
         final AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
 
         Request req = new RequestBuilder("POST")
-                .setUrl("http://ec2-54-241-86-115.us-west-1.compute.amazonaws.com:8080/greatbench/api/login/")
+                .setUrl("http://ec2-54-219-77-156.us-west-1.compute.amazonaws.com:8080/greatbench/api/login/")
                 .addHeader("Content-Type", "application/x-www-form-urlencoded")
                 .addParameter("email", username)
                 .addParameter("password", password)

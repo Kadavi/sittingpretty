@@ -19,10 +19,12 @@ import com.ning.http.client.FilePart;
 import com.sun.jna.platform.win32.User32;
 import com.sun.jna.platform.win32.WinDef;
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import demo.model.User;
@@ -35,8 +37,6 @@ public class Main extends Application {
 
     private Stage stage;
     private User loggedUser;
-    private final double MINIMUM_WINDOW_WIDTH = 500.0;
-    private final double MINIMUM_WINDOW_HEIGHT = 500.0;
 
     static ScheduledExecutorService executor;
     static User32 user32 = User32.INSTANCE;
@@ -50,9 +50,9 @@ public class Main extends Application {
         try {
             stage = primaryStage;
             stage.setTitle("Polite Stare");
-            stage.setMinWidth(MINIMUM_WINDOW_WIDTH);
-            stage.setMinHeight(MINIMUM_WINDOW_HEIGHT);
+            stage.setResizable(false);
             gotoLogin();
+            //gotoProfile();
             primaryStage.show();
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
@@ -103,7 +103,7 @@ public class Main extends Application {
 
                 }
 
-                File file = new File("C:/Users/Grant Dawson/IdeaProjects/sittingpretty/src/app/sight.jpg");
+                File file = new File("C:/Users/Grant Dawson/IdeaProjects/sittingpretty/src/demo/sight.jpg");
 
                 for (int i = 0; i < rois.size(); i++) {
 
@@ -126,10 +126,10 @@ public class Main extends Application {
                     MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
 
                     AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                    AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-241-86-115.us-west-1.compute.amazonaws.com:8080/greatbench/");
+                    AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-219-77-156.us-west-1.compute.amazonaws.com:8080/greatbench/");
 
                     builder.setHeader("Content-Type", "multipart/form-data");
-                    builder.addParameter("email", "coedry@gmail.com");
+                    builder.addParameter("email", "test@email.com");
                     builder.addParameter("key", "#$@#$");
                     builder.addBodyPart(new FilePart("fileupload", file, fileTypeMap.getContentType(file), "UTF-8"));
 
@@ -166,10 +166,10 @@ public class Main extends Application {
                 MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
 
                 AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-241-86-115.us-west-1.compute.amazonaws.com:8080/greatbench/");
+                AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-219-77-156.us-west-1.compute.amazonaws.com:8080/greatbench/");
 
                 builder.setHeader("Content-Type", "multipart/form-data");
-                builder.addParameter("email", "coedry@gmail.com");
+                builder.addParameter("email", "test@email.com");
                 builder.addParameter("key", "#$@#$");
                 builder.addBodyPart(new FilePart("fileupload", file, fileTypeMap.getContentType(file), "UTF-8"));
 
@@ -268,6 +268,8 @@ public class Main extends Application {
         }
     }
 
+    private boolean isSwitchOn = false;
+
     private Initializable replaceSceneContent(String fxml) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         InputStream in = Main.class.getResourceAsStream(fxml);
@@ -279,9 +281,32 @@ public class Main extends Application {
         } finally {
             in.close();
         } 
-        Scene scene = new Scene(page, 500, 500);
+        final Scene scene = new Scene(page);
+
+        try {
+            scene.lookup("#switch").setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent mouseEvent) {
+                    isSwitchOn = !isSwitchOn;
+                    System.out.println("rect clicked: " + isSwitchOn);
+
+                    if (isSwitchOn) {
+                        scene.lookup("#offState").setVisible(false);
+                        scene.lookup("#onState").setVisible(true);
+
+                        runLoop();
+                    } else {
+                        scene.lookup("#offState").setVisible(true);
+                        scene.lookup("#onState").setVisible(false);
+
+                        stopLoop();
+                    }
+                }
+            });
+        } catch (Exception ignored) {}
+
         stage.setScene(scene);
-        stage.sizeToScene();
+
         return (Initializable) loader.getController();
     }
 }
