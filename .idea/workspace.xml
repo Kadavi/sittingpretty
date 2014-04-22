@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/login.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/switch.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/demo/Profile.css" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\Controller.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\FXMLExample.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\FXMLExampleController.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\Login.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\app.fxml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\fxml_example.fxml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Grant Dawson\IdeaProjects\sittingpretty\src\app\sight.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/security/Authenticator.java" afterPath="$PROJECT_DIR$/src/demo/security/Authenticator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/Login.css" afterPath="$PROJECT_DIR$/src/demo/Login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/Login.fxml" afterPath="$PROJECT_DIR$/src/demo/Login.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/LoginController.java" afterPath="$PROJECT_DIR$/src/demo/LoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/Main.java" afterPath="$PROJECT_DIR$/src/demo/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/Profile.fxml" afterPath="$PROJECT_DIR$/src/demo/Profile.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/ProfileController.java" afterPath="$PROJECT_DIR$/src/demo/ProfileController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -100,7 +81,7 @@
       <file leaf-file-name="Authenticator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/security/Authenticator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="81" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="782">
+            <state line="56" column="25" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
@@ -109,19 +90,28 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="95" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.33333334" vertical-offset="998" max-vertical-offset="4794">
+            <state line="173" column="154" selection-start="6447" selection-end="6447" vertical-scroll-proportion="0.8063973" vertical-offset="1901" max-vertical-offset="4862">
               <folding>
-                <element signature="e#9602#10304#0" expanded="true" />
-                <element signature="e#10289#10290#0" expanded="true" />
+                <element signature="e#2035#7284#0" expanded="true" />
+                <element signature="e#7273#7274#0" expanded="true" />
+                <element signature="e#10010#10712#0" expanded="true" />
+                <element signature="e#10697#10698#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sight.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/demo/sight.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ProfileController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/ProfileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="24" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1734">
+            <state line="62" column="24" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
               <folding />
             </state>
           </provider>
@@ -737,7 +727,7 @@
       <workItem from="1397530883968" duration="1980000" />
       <workItem from="1397622374919" duration="31803000" />
       <workItem from="1398035061835" duration="64000" />
-      <workItem from="1398035148789" duration="2975000" />
+      <workItem from="1398035148789" duration="10891000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1394695917135</created>
@@ -799,11 +789,15 @@
       <created>1397677234319</created>
       <updated>1397677234319</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Graphical update.">
+      <created>1398038161807</created>
+      <updated>1398038161807</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172639000" />
+    <option name="totallyTimeSpent" value="180555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
@@ -829,7 +823,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24833703" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18530701" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30592105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -839,6 +833,37 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267544" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24833703" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3061594" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32785088" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26206142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2752193" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -866,7 +891,8 @@
     <MESSAGE value="Can log in and get a token." />
     <MESSAGE value="Adding everything." />
     <MESSAGE value="Mouse click added. Prod added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mouse click added. Prod added." />
+    <MESSAGE value="Graphical update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Graphical update." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1040,13 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="743" column="0" selection-start="27685" selection-end="27685" vertical-scroll-proportion="0.0" vertical-offset="11010" max-vertical-offset="34238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/Login.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="36" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
@@ -1061,13 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/ProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="24" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/jfxrt.jar!/javafx/scene/Node.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="685" column="22" selection-start="29964" selection-end="29964" vertical-scroll-proportion="0.33238637" vertical-offset="11411" max-vertical-offset="22814">
@@ -1075,19 +1087,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/security/Authenticator.java">
+    <entry file="file://$PROJECT_DIR$/src/demo/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="81" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="782">
+        <state line="62" column="24" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1734">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="751" column="25" selection-start="27883" selection-end="27883" vertical-scroll-proportion="-0.21043772" vertical-offset="12263" max-vertical-offset="34238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/security/Authenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="25" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/sight.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="95" selection-start="3282" selection-end="3282" vertical-scroll-proportion="0.33333334" vertical-offset="998" max-vertical-offset="4794">
+        <state line="173" column="154" selection-start="6447" selection-end="6447" vertical-scroll-proportion="0.8063973" vertical-offset="1901" max-vertical-offset="4862">
           <folding>
-            <element signature="e#9602#10304#0" expanded="true" />
-            <element signature="e#10289#10290#0" expanded="true" />
+            <element signature="e#2035#7284#0" expanded="true" />
+            <element signature="e#7273#7274#0" expanded="true" />
+            <element signature="e#10010#10712#0" expanded="true" />
+            <element signature="e#10697#10698#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,7 @@
 package demo;
 
 import java.awt.*;
+import java.awt.Rectangle;
 import java.awt.event.InputEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -26,6 +27,7 @@ import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.shape.*;
 import javafx.stage.Stage;
 import demo.model.User;
 import demo.security.Authenticator;
@@ -104,7 +106,7 @@ public class Main extends Application {
                 }
 
                 File file = new File("C:/Users/Grant Dawson/IdeaProjects/sittingpretty/src/demo/sight.jpg");
-
+/*
                 for (int i = 0; i < rois.size(); i++) {
 
                     Rectangle rect = new Rectangle();
@@ -126,7 +128,7 @@ public class Main extends Application {
                     MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
 
                     AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                    AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-219-77-156.us-west-1.compute.amazonaws.com:8080/greatbench/");
+                    AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-193-205-82.us-west-1.compute.amazonaws.com:8080/greatbench/");
 
                     builder.setHeader("Content-Type", "multipart/form-data");
                     builder.addParameter("email", "test@email.com");
@@ -142,7 +144,7 @@ public class Main extends Application {
                         if (!result.isEmpty() && result.contains(",")) {
 
                             System.out.println("Clicking");
-                            mouseClick(result.split(","), rect, currentFocusedHwnd, false);
+                            mouseClick(result.split(","), rect, currentFocusedHwnd);
 
                         }
 
@@ -152,10 +154,13 @@ public class Main extends Application {
 
                     }
                 }
+ */
+                Rectangle fullRect = new Rectangle(new Point((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2));
 
                 try {
 
-                    BufferedImage image = new Robot().createScreenCapture(new Rectangle(new Point(0, 0), Toolkit.getDefaultToolkit().getScreenSize()));
+                    BufferedImage image = new Robot().createScreenCapture(new Rectangle(new Point((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2),
+                            new Dimension((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2)));
 
                     ImageIO.write(image, "jpg", file);
 
@@ -166,7 +171,7 @@ public class Main extends Application {
                 MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
 
                 AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-219-77-156.us-west-1.compute.amazonaws.com:8080/greatbench/");
+                AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-193-205-82.us-west-1.compute.amazonaws.com:8080/greatbench/");
 
                 builder.setHeader("Content-Type", "multipart/form-data");
                 builder.addParameter("email", "test@email.com");
@@ -182,7 +187,7 @@ public class Main extends Application {
                     if (!result.isEmpty() && result.contains(",")) {
 
                         System.out.println("Clicking");
-                        mouseClick(result.split(","), new Rectangle(), currentFocusedHwnd, true);
+                        mouseClick(result.split(","), fullRect, currentFocusedHwnd);
 
                     }
 
@@ -204,7 +209,7 @@ public class Main extends Application {
 
     }
 
-    public static void mouseClick(String[] relativePosition, Rectangle offset, WinDef.HWND refocus, boolean isFull) throws AWTException {
+    public static void mouseClick(String[] relativePosition, Rectangle offset, WinDef.HWND refocus) throws AWTException {
 
         if (relativePosition.length > 2) return;
 
@@ -214,9 +219,7 @@ public class Main extends Application {
         int y = (int) (offset.getY() + Double.parseDouble(relativePosition[1]));
 
         Robot robot = new Robot();
-        if ((isFull && y > 300) || !isFull) {
-            robot.mouseMove(x, y);
-        }
+        robot.mouseMove(x, y);
 
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.mouseRelease(InputEvent.BUTTON1_MASK);
