@@ -106,7 +106,7 @@ public class Main extends Application {
                 }
 
                 File file = new File("C:/Users/Grant Dawson/IdeaProjects/sittingpretty/src/demo/sight.jpg");
-/*
+
                 for (int i = 0; i < rois.size(); i++) {
 
                     Rectangle rect = new Rectangle();
@@ -154,7 +154,7 @@ public class Main extends Application {
 
                     }
                 }
- */
+
                 Rectangle fullRect = new Rectangle(new Point((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2));
 
                 try {
