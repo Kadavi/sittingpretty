@@ -159,8 +159,7 @@ public class Main extends Application {
 
                 try {
 
-                    BufferedImage image = new Robot().createScreenCapture(new Rectangle(new Point((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2),
-                            new Dimension((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2)));
+                    BufferedImage image = new Robot().createScreenCapture(fullRect);
 
                     ImageIO.write(image, "jpg", file);
 
