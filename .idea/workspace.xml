@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/security/Authenticator.java" afterPath="$PROJECT_DIR$/src/demo/security/Authenticator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/Main.java" afterPath="$PROJECT_DIR$/src/demo/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -90,12 +89,13 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="154" selection-start="6447" selection-end="6447" vertical-scroll-proportion="0.8063973" vertical-offset="1901" max-vertical-offset="4862">
+            <state line="226" column="5" selection-start="8078" selection-end="8078" vertical-scroll-proportion="0.84175086" vertical-offset="2781" max-vertical-offset="4743">
               <folding>
-                <element signature="e#2035#7284#0" expanded="true" />
-                <element signature="e#7273#7274#0" expanded="true" />
-                <element signature="e#10010#10712#0" expanded="true" />
-                <element signature="e#10697#10698#0" expanded="true" />
+                <element signature="e#2035#7129#0" expanded="true" />
+                <element signature="e#2598#2611#0" expanded="true" />
+                <element signature="e#7118#7119#0" expanded="true" />
+                <element signature="e#9776#10478#0" expanded="true" />
+                <element signature="e#10463#10464#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +153,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
@@ -727,7 +726,7 @@
       <workItem from="1397530883968" duration="1980000" />
       <workItem from="1397622374919" duration="31803000" />
       <workItem from="1398035061835" duration="64000" />
-      <workItem from="1398035148789" duration="10891000" />
+      <workItem from="1398035148789" duration="14707000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1394695917135</created>
@@ -793,14 +792,26 @@
       <created>1398038161807</created>
       <updated>1398038161807</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixed fullscreen.">
+      <created>1398178745261</created>
+      <updated>1398178745261</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Variablize.">
+      <created>1398178845607</created>
+      <updated>1398178845607</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Uncomment windowed mode.&#10;">
+      <created>1398178982117</created>
+      <updated>1398178982117</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180555000" />
+    <option name="totallyTimeSpent" value="184371000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -874,6 +885,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -892,7 +904,10 @@
     <MESSAGE value="Adding everything." />
     <MESSAGE value="Mouse click added. Prod added." />
     <MESSAGE value="Graphical update." />
-    <option name="LAST_COMMIT_MESSAGE" value="Graphical update." />
+    <MESSAGE value="Fixed fullscreen." />
+    <MESSAGE value="Variablize." />
+    <MESSAGE value="Uncomment windowed mode.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uncomment windowed mode.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1011,23 +1026,9 @@
         <state line="5" column="20" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1972" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="13" selection-start="1787" selection-end="1787" vertical-scroll-proportion="-0.66201115" vertical-offset="559" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="31" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="816" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="11" selection-start="8247" selection-end="8247" vertical-scroll-proportion="0.0" vertical-offset="3348" max-vertical-offset="20230">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/CoarseGrid.png">
@@ -1108,19 +1109,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="460" column="0" selection-start="18979" selection-end="18979" vertical-scroll-proportion="0.30126184" vertical-offset="7034" max-vertical-offset="9452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/sight.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="248" column="11" selection-start="8617" selection-end="8617" vertical-scroll-proportion="0.33278957" vertical-offset="3604" max-vertical-offset="20230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="154" selection-start="6447" selection-end="6447" vertical-scroll-proportion="0.8063973" vertical-offset="1901" max-vertical-offset="4862">
+        <state line="226" column="5" selection-start="8078" selection-end="8078" vertical-scroll-proportion="0.84175086" vertical-offset="2781" max-vertical-offset="4743">
           <folding>
-            <element signature="e#2035#7284#0" expanded="true" />
-            <element signature="e#7273#7274#0" expanded="true" />
-            <element signature="e#10010#10712#0" expanded="true" />
-            <element signature="e#10697#10698#0" expanded="true" />
+            <element signature="e#2035#7129#0" expanded="true" />
+            <element signature="e#2598#2611#0" expanded="true" />
+            <element signature="e#7118#7119#0" expanded="true" />
+            <element signature="e#9776#10478#0" expanded="true" />
+            <element signature="e#10463#10464#0" expanded="true" />
           </folding>
         </state>
       </provider>

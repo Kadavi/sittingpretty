@@ -149,18 +149,16 @@ public class Main extends Application {
                         }
 
                     } catch (Exception e) {
-
-                        e.printStackTrace();
-
+                        //e.printStackTrace();
                     }
                 }
 
-                Rectangle fullRect = new Rectangle(new Point((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2));
+                Rectangle fullRect = new Rectangle(new Point((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2),
+                        new Dimension((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2));
 
                 try {
 
                     BufferedImage image = new Robot().createScreenCapture(fullRect);
-
                     ImageIO.write(image, "jpg", file);
 
                 } catch (Exception e) {
@@ -191,9 +189,7 @@ public class Main extends Application {
                     }
 
                 } catch (Exception e) {
-
-                    e.printStackTrace();
-
+                    //e.printStackTrace();
                 }
             }
         };
@@ -221,8 +217,6 @@ public class Main extends Application {
         robot.mouseMove(x, y);
 
         robot.mousePress(InputEvent.BUTTON1_MASK);
-        robot.mouseRelease(InputEvent.BUTTON1_MASK);
-        robot.delay(200);
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.mouseRelease(InputEvent.BUTTON1_MASK);
         robot.delay(5);
