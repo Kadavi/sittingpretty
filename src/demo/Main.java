@@ -128,7 +128,7 @@ public class Main extends Application {
                     MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
 
                     AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                    AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-193-205-82.us-west-1.compute.amazonaws.com:8080/greatbench/");
+                    AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://54.241.240.119:8080/greatbench/");
 
                     builder.setHeader("Content-Type", "multipart/form-data");
                     builder.addParameter("email", "test@email.com");
@@ -168,7 +168,7 @@ public class Main extends Application {
                 MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
 
                 AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://ec2-54-193-205-82.us-west-1.compute.amazonaws.com:8080/greatbench/");
+                AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://54.241.240.119:8080/greatbench/");
 
                 builder.setHeader("Content-Type", "multipart/form-data");
                 builder.addParameter("email", "test@email.com");
@@ -219,10 +219,12 @@ public class Main extends Application {
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.mouseRelease(InputEvent.BUTTON1_MASK);
-        robot.delay(5);
-        robot.mouseMove((int) current.getX() + 1, (int) current.getY() + 1);
-
         user32.SetForegroundWindow(refocus);
+        robot.delay(10);
+        robot.mouseMove((int) current.getX() + 1, (int) current.getY() + 1);
+        robot.mousePress(InputEvent.BUTTON1_MASK);
+        robot.mouseRelease(InputEvent.BUTTON1_MASK);
+
 
     }
 

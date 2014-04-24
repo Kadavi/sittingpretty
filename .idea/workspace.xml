@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/security/Authenticator.java" afterPath="$PROJECT_DIR$/src/demo/security/Authenticator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/demo/Main.java" afterPath="$PROJECT_DIR$/src/demo/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -80,7 +81,7 @@
       <file leaf-file-name="Authenticator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/security/Authenticator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="25" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+            <state line="52" column="31" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
@@ -89,13 +90,13 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="5" selection-start="8078" selection-end="8078" vertical-scroll-proportion="0.84175086" vertical-offset="2781" max-vertical-offset="4743">
+            <state line="223" column="65" selection-start="7990" selection-end="7990" vertical-scroll-proportion="0.6700337" vertical-offset="2832" max-vertical-offset="4777">
               <folding>
-                <element signature="e#2035#7129#0" expanded="true" />
+                <element signature="e#2035#7059#0" expanded="true" />
                 <element signature="e#2598#2611#0" expanded="true" />
-                <element signature="e#7118#7119#0" expanded="true" />
-                <element signature="e#9776#10478#0" expanded="true" />
-                <element signature="e#10463#10464#0" expanded="true" />
+                <element signature="e#7048#7049#0" expanded="true" />
+                <element signature="e#9811#10513#0" expanded="true" />
+                <element signature="e#10498#10499#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,7 +154,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
+    <option name="width" value="1417" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -726,7 +727,7 @@
       <workItem from="1397530883968" duration="1980000" />
       <workItem from="1397622374919" duration="31803000" />
       <workItem from="1398035061835" duration="64000" />
-      <workItem from="1398035148789" duration="14707000" />
+      <workItem from="1398035148789" duration="16841000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1394695917135</created>
@@ -804,14 +805,18 @@
       <created>1398178982117</created>
       <updated>1398178982117</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Mouse fix to instant.">
+      <created>1398305984861</created>
+      <updated>1398305984861</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184371000" />
+    <option name="totallyTimeSpent" value="186505000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="1417" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -833,7 +838,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24833703" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16482708" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30592105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -907,7 +912,8 @@
     <MESSAGE value="Fixed fullscreen." />
     <MESSAGE value="Variablize." />
     <MESSAGE value="Uncomment windowed mode.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uncomment windowed mode.&#10;" />
+    <MESSAGE value="Mouse fix to instant." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mouse fix to instant." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1102,13 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/security/Authenticator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="25" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/awt/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="460" column="0" selection-start="18979" selection-end="18979" vertical-scroll-proportion="0.30126184" vertical-offset="7034" max-vertical-offset="9452">
@@ -1128,15 +1127,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/security/Authenticator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="31" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="5" selection-start="8078" selection-end="8078" vertical-scroll-proportion="0.84175086" vertical-offset="2781" max-vertical-offset="4743">
+        <state line="223" column="65" selection-start="7990" selection-end="7990" vertical-scroll-proportion="0.6700337" vertical-offset="2832" max-vertical-offset="4777">
           <folding>
-            <element signature="e#2035#7129#0" expanded="true" />
+            <element signature="e#2035#7059#0" expanded="true" />
             <element signature="e#2598#2611#0" expanded="true" />
-            <element signature="e#7118#7119#0" expanded="true" />
-            <element signature="e#9776#10478#0" expanded="true" />
-            <element signature="e#10463#10464#0" expanded="true" />
+            <element signature="e#7048#7049#0" expanded="true" />
+            <element signature="e#9811#10513#0" expanded="true" />
+            <element signature="e#10498#10499#0" expanded="true" />
           </folding>
         </state>
       </provider>
