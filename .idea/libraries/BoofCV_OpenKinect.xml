@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="BoofCV_OpenKinect">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/BoofCV_OpenKinect.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jcodec-0.1.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/BoofCV.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/BoofCVAndroid.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/BoofCVXuggler.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/GeoRegression.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/DDogleg.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/BoofCV_V4L4J.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/EJML.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xstream-1.4.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,7 +1,44 @@
 package demo;
 
+import boofcv.alg.color.ColorHsv;
+import boofcv.alg.feature.shapes.FitData;
+import boofcv.alg.feature.shapes.ShapeFittingOps;
+import boofcv.alg.filter.binary.BinaryImageOps;
+import boofcv.alg.filter.binary.Contour;
+import boofcv.alg.filter.binary.ThresholdImageOps;
+import boofcv.alg.misc.ImageStatistics;
+import boofcv.core.image.ConvertBufferedImage;
+import boofcv.gui.feature.VisualizeShapes;
+import boofcv.gui.image.ShowImages;
+import boofcv.io.image.UtilImageIO;
+import boofcv.struct.PointIndex_I32;
+import boofcv.struct.image.ImageFloat32;
+import boofcv.struct.image.ImageUInt8;
+import boofcv.struct.image.MultiSpectral;
+import com.ning.http.client.AsyncHttpClient;
+import com.ning.http.client.AsyncHttpClientConfig;
+import com.ning.http.client.FilePart;
+import com.sun.jna.platform.win32.User32;
+import com.sun.jna.platform.win32.WinDef;
+import demo.model.User;
+import demo.security.Authenticator;
+import georegression.metric.UtilAngle;
+import georegression.struct.point.Point2D_F64;
+import georegression.struct.point.Point2D_I32;
+import georegression.struct.shapes.EllipseRotated_F64;
+import javafx.application.Application;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.fxml.JavaFXBuilderFactory;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+
+import javax.activation.MimetypesFileTypeMap;
+import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.Rectangle;
 import java.awt.event.InputEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -13,27 +50,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import com.ning.http.client.AsyncHttpClient;
-import com.ning.http.client.AsyncHttpClientConfig;
-import com.ning.http.client.FilePart;
-import com.sun.jna.platform.win32.User32;
-import com.sun.jna.platform.win32.WinDef;
-import javafx.application.Application;
-import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.fxml.JavaFXBuilderFactory;
-import javafx.scene.Scene;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.shape.*;
-import javafx.stage.Stage;
-import demo.model.User;
-import demo.security.Authenticator;
-
-import javax.activation.MimetypesFileTypeMap;
-import javax.imageio.ImageIO;
 
 public class Main extends Application {
 
@@ -75,37 +91,23 @@ public class Main extends Application {
             public void run() {
 
                 String result = null;
-
                 WinDef.HWND currentFocusedHwnd = user32.GetForegroundWindow();
-
                 WinDef.RECT cRect = new WinDef.RECT();
                 WinDef.RECT fRect = new WinDef.RECT();
-                WinDef.HWND cHwnd = user32.FindWindow
-                        (null, "Netflix - Google Chrome");
-                WinDef.HWND fHwnd = user32.FindWindow
-                        (null, "Netflix - Mozilla Firefox");
+                WinDef.HWND cHwnd = user32.FindWindow(null, "Netflix - Google Chrome");
+                WinDef.HWND fHwnd = user32.FindWindow(null, "Netflix - Mozilla Firefox");
 
                 List<WinDef.RECT> rois = new ArrayList<WinDef.RECT>();
 
                 if (user32.IsWindowVisible(cHwnd)) {
-
-                    //System.out.println("Chrome: " + user32.IsWindowVisible(cHwnd));
-                    //System.out.println(cRect.toString());
                     user32.GetWindowRect(cHwnd, cRect);
                     rois.add(cRect);
-
                 }
 
                 if (user32.IsWindowVisible(fHwnd)) {
-
-                    //System.out.println("Firefox: " + user32.IsWindowVisible(fHwnd));
-                    //System.out.println(fRect.toString());
                     user32.GetWindowRect(fHwnd, fRect);
                     rois.add(fRect);
-
                 }
-
-                File file = new File("C:/Users/Grant Dawson/IdeaProjects/sittingpretty/src/demo/sight.jpg");
 
                 for (int i = 0; i < rois.size(); i++) {
 
@@ -116,86 +118,26 @@ public class Main extends Application {
                             rois.get(i).toRectangle().getHeight() / 2);
 
                     try {
-
                         BufferedImage image = new Robot().createScreenCapture(rect);
-
-                        ImageIO.write(image, "jpg", file);
-
+                        mouseClick(detect(image), rect, currentFocusedHwnd);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-
-                    MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
-
-                    AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                    AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://54.241.240.119:8080/greatbench/");
-
-                    builder.setHeader("Content-Type", "multipart/form-data");
-                    builder.addParameter("email", "test@email.com");
-                    builder.addParameter("key", "#$@#$");
-                    builder.addBodyPart(new FilePart("fileupload", file, fileTypeMap.getContentType(file), "UTF-8"));
-
-                    System.out.println("Sending");
-
-                    try {
-
-                        result = builder.execute().get().getResponseBody();
-
-                        if (!result.isEmpty() && result.contains(",")) {
-
-                            System.out.println("Clicking");
-                            mouseClick(result.split(","), rect, currentFocusedHwnd);
-
-                        }
-
-                    } catch (Exception e) {
-                        //e.printStackTrace();
-                    }
                 }
 
-                Rectangle fullRect = new Rectangle(new Point((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2),
-                        new Dimension((int) Toolkit.getDefaultToolkit().getScreenSize().getWidth()/2, (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight()/2));
+                Rectangle fullRect = new Rectangle(new Point((int)(Toolkit.getDefaultToolkit().getScreenSize().getWidth() - Toolkit.getDefaultToolkit().getScreenSize().getWidth()/4), (int)(Toolkit.getDefaultToolkit().getScreenSize().getHeight() - Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4)),
+                        new Dimension((int)Toolkit.getDefaultToolkit().getScreenSize().getWidth()/4, (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight()/4));
 
                 try {
-
                     BufferedImage image = new Robot().createScreenCapture(fullRect);
-                    ImageIO.write(image, "jpg", file);
-
+                    mouseClick(detect(image), fullRect, currentFocusedHwnd);
                 } catch (Exception e) {
                     e.printStackTrace();
-                }
-
-                MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
-
-                AsyncHttpClient client = new AsyncHttpClient(new AsyncHttpClientConfig.Builder().build());
-                AsyncHttpClient.BoundRequestBuilder builder = client.preparePost("http://54.241.240.119:8080/greatbench/");
-
-                builder.setHeader("Content-Type", "multipart/form-data");
-                builder.addParameter("email", "test@email.com");
-                builder.addParameter("key", "#$@#$");
-                builder.addBodyPart(new FilePart("fileupload", file, fileTypeMap.getContentType(file), "UTF-8"));
-
-                System.out.println("Sending" + System.nanoTime());
-
-                try {
-
-                    result = builder.execute().get().getResponseBody();
-
-                    if (!result.isEmpty() && result.contains(",")) {
-
-                        System.out.println("Clicking");
-                        mouseClick(result.split(","), fullRect, currentFocusedHwnd);
-
-                    }
-
-                } catch (Exception e) {
-                    //e.printStackTrace();
                 }
             }
         };
 
-        executor.scheduleAtFixedRate(periodicTask, 0, 10, TimeUnit.SECONDS);
-
+        executor.scheduleAtFixedRate(periodicTask, 0, 7, TimeUnit.SECONDS);
     }
 
     public static void stopLoop() {
@@ -204,29 +146,195 @@ public class Main extends Application {
 
     }
 
-    public static void mouseClick(String[] relativePosition, Rectangle offset, WinDef.HWND refocus) throws AWTException {
+    public static void mouseClick(Point2D_F64 relativePosition, Rectangle offset, WinDef.HWND refocus) throws AWTException {
+        if (relativePosition == null) {
+            return;
+        }
 
-        if (relativePosition.length > 2) return;
+        System.out.println("Clicking -> " + (offset.getX() + relativePosition.getX()) + ","
+                + (offset.getY() + relativePosition.getY()));
 
         java.awt.Point current = MouseInfo.getPointerInfo().getLocation();
-
-        int x = (int) (offset.getX() + Double.parseDouble(relativePosition[0]));
-        int y = (int) (offset.getY() + Double.parseDouble(relativePosition[1]));
-
         Robot robot = new Robot();
-        robot.mouseMove(x, y);
-
+        robot.mouseMove((int)(offset.getX() + relativePosition.getX()), (int)(offset.getY() + relativePosition.getY()));
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.mousePress(InputEvent.BUTTON1_MASK);
         robot.mouseRelease(InputEvent.BUTTON1_MASK);
         user32.SetForegroundWindow(refocus);
-        robot.delay(10);
-        robot.mouseMove((int) current.getX() + 1, (int) current.getY() + 1);
-        robot.mousePress(InputEvent.BUTTON1_MASK);
-        robot.mouseRelease(InputEvent.BUTTON1_MASK);
-
-
+        robot.mouseMove((int)current.getX(), (int)current.getY());
     }
+
+    public static Point2D_F64 detect(BufferedImage source) {
+        //BufferedImage source = UtilImageIO.loadImage("src/sight.jpg");
+        ImageFloat32 input = ConvertBufferedImage.convertFromSingle(source, null, ImageFloat32.class);
+
+        ImageUInt8 binary = new ImageUInt8(input.width, input.height);
+
+        double mean = ImageStatistics.mean(input);
+
+        ThresholdImageOps.threshold(input, binary, (float) mean, true);
+
+        ImageUInt8 grey = BinaryImageOps.erode8(binary, null);
+        grey = BinaryImageOps.dilate8(grey, null);
+
+        List<Contour> contours = BinaryImageOps.contour(grey, 8, null);
+
+        Graphics2D g2 = source.createGraphics();
+        g2.setStroke(new BasicStroke(3));
+        g2.setColor(Color.GREEN);
+
+        for (Contour c : contours) {
+            FitData<EllipseRotated_F64> ellipse = ShapeFittingOps.fitEllipse_I32(c.external, 0, false, null);
+
+            if (isCircle(c)) {
+                VisualizeShapes.drawEllipse(ellipse.shape, g2);
+                //System.out.println("yes circle: " + ellipse.shape.center);
+
+                MultiSpectral<ImageFloat32> inputHsv = ConvertBufferedImage.convertFromMulti(source, null, true,ImageFloat32.class);
+                MultiSpectral<ImageFloat32> hsv = new MultiSpectral<ImageFloat32>(ImageFloat32.class, inputHsv.width, inputHsv.height,3);
+
+                ColorHsv.rgbToHsv_F32(inputHsv, hsv);
+
+                float maxDist2 = 0.4f*0.4f;
+
+                ImageFloat32 H = hsv.getBand(0);
+                ImageFloat32 S = hsv.getBand(1);
+
+                float adjustUnits = (float)(Math.PI/2.0);
+
+                float hue = 0.15f;
+                float saturation = 0.9f;
+
+                BufferedImage output = new BufferedImage(inputHsv.width, inputHsv.height, BufferedImage.TYPE_INT_RGB);
+                for (int y = 0; y < hsv.height; y++) {
+                    for (int x = 0; x < hsv.width; x++) {
+                        float dh = UtilAngle.dist(H.unsafe_get(x, y), hue);
+                        float ds = (S.unsafe_get(x, y)-saturation)*adjustUnits;
+
+                        float dist2 = dh*dh + ds*ds;
+                        if (dist2 <= maxDist2) {
+                            output.setRGB(x, y, source.getRGB(x, y));
+                        }
+                    }
+                }
+
+                ImageFloat32 result = ConvertBufferedImage.convertFromSingle(output, null, ImageFloat32.class);
+
+                ImageUInt8 binaryResult = new ImageUInt8(result.width, result.height);
+
+                mean = ImageStatistics.mean(result);
+
+                ThresholdImageOps.threshold(result, binaryResult, (float)mean, true);
+
+                //BinaryImageOps.erode8(binaryResult, binaryResult);
+                BinaryImageOps.dilate8(binaryResult, binaryResult);
+
+                contours = BinaryImageOps.contour(binaryResult, 8, null);
+
+                //ShowImages.showWindow(source, "Binary Blob Contours");
+                for (Contour d : contours) {
+                    List<PointIndex_I32> vertexes = ShapeFittingOps.fitPolygon(d.external, false,
+                            4, Math.PI/2, 0);
+
+                    g2.setColor(Color.BLUE);
+                    for (List<Point2D_I32> internal : c.internal) {
+                        vertexes = ShapeFittingOps.fitPolygon(internal, false, 4, Math.PI/2, 0);
+                        VisualizeShapes.drawPolygon(vertexes, true, g2);
+
+                        if ((internal.get(0).getX() - ellipse.shape.getCenter().getX()) < 100) {
+
+                            if (isTriangle(internal)) {
+                                //System.out.println("yes triangle: " + ellipse.shape.center);
+                                return ellipse.shape.getCenter();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+    public static double GetAngleOfLineBetweenTwoPoints(Point2D_I32 pointA, Point2D_I32 pointB) {
+        double xDiff = pointB.x - pointA.x;
+        double yDiff = pointB.y - pointA.y;
+
+        return Math.toDegrees(Math.atan2(yDiff, xDiff));
+    }
+
+    public static boolean isTriangle(List<Point2D_I32> points) {
+        Point2D_I32 top = new Point2D_I32(points.get(0).getX(), points.get(0).getY()),
+                right = new Point2D_I32(points.get(0).getX(), points.get(0).getY()),
+                bottom = new Point2D_I32(points.get(0).getX(), points.get(0).getY());
+
+        for (Point2D_I32 p : points) {
+            if (top.getY() > p.getY()) {
+                top.set(p.getX(), p.getY());
+            }
+
+            if (right.getX() < p.getX()) {
+                right.set(p.getX(), p.getY());
+            }
+
+            if (bottom.getY() < p.getY()) {
+                bottom.set(p.getX(), p.getY());
+            }
+        }
+
+        double topToBottom = GetAngleOfLineBetweenTwoPoints(top, bottom);
+        double topToRight = GetAngleOfLineBetweenTwoPoints(top, right);
+        double bottomToRight = GetAngleOfLineBetweenTwoPoints(bottom, right);
+
+        if ((topToBottom > 80 && topToBottom < 100) &&
+            Math.abs(top.getY() - bottom.getY()) > 10) {
+
+            return true;
+        }
+
+        /*if ((topToBottom > 80 && topToBottom < 100) &&
+                (topToRight > 25 && topToRight < 50) &&
+                (bottomToRight < -25 && bottomToRight > -50)) {
+
+            return true;
+        }*/
+
+        return false;
+    }
+
+    public static boolean isCircle(Contour contour) {
+        int left = contour.external.get(0).getX(),
+                top = contour.external.get(0).getY(),
+                right = contour.external.get(0).getX(),
+                bottom = contour.external.get(0).getY();
+
+        for (Point2D_I32 p : contour.external) {
+            if (left > p.getX()) {
+                left = p.getX();
+            } else if (right < p.getX()) {
+                right = p.getX();
+            }
+
+            if (top > p.getY()) {
+                top = p.getY();
+            } else if (bottom < p.getY()) {
+                bottom = p.getY();
+            }
+        }
+
+        int horizontalDelta = Math.abs(left - right);
+        int verticalDelta = Math.abs(top - bottom);
+
+        if ((horizontalDelta > 30 && horizontalDelta < 200) &&
+                (verticalDelta > 30 && verticalDelta < 200) &&
+                (Math.abs(horizontalDelta - verticalDelta)) <= 2) {
+
+            return true;
+        }
+
+        return false;
+    }
+
 
     public User getLoggedUser() {
         return loggedUser;
@@ -286,7 +394,7 @@ public class Main extends Application {
                 @Override
                 public void handle(MouseEvent mouseEvent) {
                     isSwitchOn = !isSwitchOn;
-                    System.out.println("rect clicked: " + isSwitchOn);
+                    //System.out.println("rect clicked: " + isSwitchOn);
 
                     if (isSwitchOn) {
                         scene.lookup("#offState").setVisible(false);

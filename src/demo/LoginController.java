@@ -66,8 +66,8 @@ public class LoginController extends AnchorPane implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         errorMessage.setText("");
-        userId.setPromptText("your@email.com");
-        password.setPromptText("******");
+        userId.setPromptText("test@email.com");
+        password.setPromptText("secrets");
     }
     
     public void processLogin(ActionEvent event) {
