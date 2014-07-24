@@ -32,6 +32,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.Scene;
+import javafx.scene.image.*;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -70,7 +72,7 @@ public class Main extends Application {
             stage.setTitle("Polite Stare");
             stage.setResizable(false);
             gotoLogin();
-            //gotoProfile();
+            stage.getIcons().add(new Image("demo/favicon.png"));
             primaryStage.show();
         } catch (Exception ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
@@ -137,7 +139,7 @@ public class Main extends Application {
             }
         };
 
-        executor.scheduleAtFixedRate(periodicTask, 0, 7, TimeUnit.SECONDS);
+        executor.scheduleAtFixedRate(periodicTask, 0, 12, TimeUnit.SECONDS);
     }
 
     public static void stopLoop() {
@@ -291,13 +293,6 @@ public class Main extends Application {
 
             return true;
         }
-
-        /*if ((topToBottom > 80 && topToBottom < 100) &&
-                (topToRight > 25 && topToRight < 50) &&
-                (bottomToRight < -25 && bottomToRight > -50)) {
-
-            return true;
-        }*/
 
         return false;
     }
